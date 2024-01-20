@@ -1,0 +1,334 @@
+[
+  {
+    "type": "title",
+    "key": "baseInfo",
+    "label": "工单信息",
+    "disabled": true,
+    "span": {
+      "span": 24
+    }
+  },
+  {
+    "type": "DicSelect",
+    "key": "complainType",
+    "label": "诉求类型",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 12,
+      "lg": 10,
+      "xl": 8,
+      "xxl": 8
+    },
+    "props": {
+      "placeholder": "请输入",
+      "dicName": "sex"
+    }
+  },
+  {
+    "type": "DicCascader",
+    "key": "complainCntType",
+    "label": "内容类型",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 12,
+      "lg": 10,
+      "xl": 8,
+      "xxl": 8
+    },
+    "props": {
+      "placeholder": "请输入",
+      "dicName": "sex"
+    }
+  },
+  {
+    "type": "DatePicker",
+    "key": "deadline",
+    "label": "拟办期限",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 12,
+      "lg": 10,
+      "xl": 8,
+      "xxl": 8
+    },
+    "props": {
+      "placeholder": "请选择"
+    }
+  },
+  {
+    "type": "InputNumber",
+    "key": "round",
+    "label": "交办轮次",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 12,
+      "lg": 10,
+      "xl": 8,
+      "xxl": 8
+    },
+    "props": {
+      "placeholder": "请输入",
+      "min": 1,
+      "max": 10
+    }
+  },
+  {
+    "type": "DatePicker",
+    "key": "complainOccurTime",
+    "label": "诉求发生时间",
+    "disabled": true,
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 12,
+      "lg": 10,
+      "xl": 8,
+      "xxl": 8
+    },
+    "props": {
+      "placeholder": "请选择",
+      "showTime": {
+        "format": "HH:mm"
+      },
+      "format": "YYYY-MM-DD HH:mm"
+    }
+  },
+  {
+    "type": "DicSelect",
+    "key": "sourceChannel",
+    "label": "来源渠道",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 12,
+      "lg": 10,
+      "xl": 8,
+      "xxl": 8
+    },
+    "props": {
+      "placeholder": "请选择",
+      "dicName": "sex"
+    }
+  },
+  {
+    "type": "ProFormCascader",
+    "key": "area",
+    "label": "所属区域",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 12,
+      "lg": 10,
+      "xl": 8,
+      "xxl": 8
+    },
+    "props": {
+      "placeholder": "请选择",
+      "request": {
+        "url": "/mock/api/xxx/cascader",
+        "method": "get",
+        "params": {
+          "d": 1
+        }
+      }
+    }
+  },
+  {
+    "type": "Input",
+    "key": "complainantName",
+    "label": "诉求人姓名",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 12,
+      "lg": 10,
+      "xl": 8,
+      "xxl": 8
+    },
+    "props": {
+      "placeholder": "请输入"
+    }
+  },
+  {
+    "type": "Input",
+    "key": "complainantNamePhone",
+    "label": "投诉人电话",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      },
+      {
+        "pattern": "^\\d{11}$",
+        "mode": ""
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 12,
+      "lg": 10,
+      "xl": 8,
+      "xxl": 8
+    },
+    "props": {
+      "placeholder": "请输入"
+    }
+  },
+  {
+    "type": "DicSelect",
+    "key": "complainantSex",
+    "label": "性别",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 12,
+      "lg": 10,
+      "xl": 8,
+      "xxl": 8
+    },
+    "offset": 16,
+    "props": {
+      "placeholder": "请输入",
+      "dicName": "sex"
+    }
+  },
+  {
+    "type": "Input",
+    "key": "complainTitle",
+    "label": "诉求标题",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 24,
+      "lg": 16,
+      "xl": 16,
+      "xxl": 16
+    },
+    "props": {
+      "placeholder": "请输入"
+    }
+  },
+  {
+    "type": "TextArea",
+    "key": "complainDesc",
+    "label": "诉求描述",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 24,
+      "lg": 16,
+      "xl": 16,
+      "xxl": 16
+    },
+    "props": {
+      "placeholder": "请输入",
+      "rows": 4
+    }
+  },
+  {
+    "type": "Input",
+    "key": "complainAddr",
+    "label": "诉求地点",
+    "disabled": true,
+    "rules": [
+      {
+        "required": true
+      }
+    ],
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 24,
+      "lg": 16,
+      "xl": 16,
+      "xxl": 16
+    },
+    "props": {
+      "placeholder": "请输入"
+    }
+  },
+  {
+    "type": "Upload",
+    "key": "complainFiles",
+    "label": "诉求附件",
+    "disabled": true,
+    "span": {
+      "xs": 24,
+      "sm": 24,
+      "md": 24,
+      "lg": 16,
+      "xl": 16,
+      "xxl": 16
+    },
+    "props": {
+      "accept": "image/jpeg,image/jpg,image/png",
+      "maxCount": 5,
+      "listType": "picture-card"
+    }
+  }
+]
